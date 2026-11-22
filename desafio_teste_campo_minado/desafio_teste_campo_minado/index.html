@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campo Minado 18 × 14</title>
+</head>
+<body>
+  <!--
+    Esqueleto da tela: só os elementos FIXOS do contrato (PLANEJAMENTO.md, seção 3),
+    todos vazios e sem atributos de estado. As casas (casa-L-C) são criadas pelo jogo.
+  -->
+  <header>
+    <span data-testid="bombas-restantes"></span>
+    <button data-testid="btn-recomecar"></button>
+    <button data-testid="btn-modo-marcacao"></button>
+    <span data-testid="tempo"></span>
+  </header>
+  <main>
+    <div data-testid="campo"></div>
+  </main>
+  <footer>
+    <p data-testid="aviso"></p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
