@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominó — 2 jogadores</title>
+</head>
+<body>
+  <!--
+    Esqueleto da tela: só os elementos FIXOS do contrato (PLANEJAMENTO.md, seção 3),
+    vazios e sem atributos de estado. As peças (pedra-A-B), a caixa de escolha de lado e
+    as linhas do histórico são criadas pelo jogo.
+  -->
+  <header>
+    <button data-testid="btn-nova-partida"></button>
+    <span data-testid="jogador-da-vez"></span>
+    <span data-testid="estoque-qtd"></span>
+    <span data-testid="placar-1"></span>
+    <span data-testid="placar-2"></span>
+  </header>
+  <main>
+    <div data-testid="mao-2"></div>
+    <div data-testid="mesa"></div>
+    <div>
+      <span data-testid="extremo-esq"></span>
+      <span data-testid="extremo-dir"></span>
+    </div>
+    <div data-testid="mao-1"></div>
+  </main>
+  <nav>
+    <button data-testid="btn-comprar"></button>
+    <button data-testid="btn-passar"></button>
+  </nav>
+  <footer>
+    <p data-testid="aviso"></p>
+    <ol data-testid="historico"></ol>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
